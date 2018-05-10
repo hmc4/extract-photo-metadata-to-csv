@@ -1,4 +1,4 @@
-ID,Event,File Name,File Format,File Size (Bytes),File Size (MB),Date Taken,Date Digitized,Software,Image Width,Image Height,Units,Latitude,Coordinates,Longitude,Coordinates,Camera,Exposure Time,Flash Used?,Lens Model
+ID,Event,File Name,File Format,File Size (Bytes),File Size (MB),Date Taken,Date Digitized,Software,Image Width,Image Height,Units,Latitude,DMS,Longitude,DMS,Camera,Exposure Time,Flash Used?,Lens Model
 1,,IMG_1816.jpeg,image/jpeg,1694906,1.69,2018:01:05 16:24:09,2018:01:05 16:24:09,11.2.1,72,72,Pixels/Inch,N,"[37, 47, 1031/100]",W,"[122, 24, 73/25]",iPhone 7,1/15,"Flash did not fire, compulsory flash mode",iPhone 7 back camera 3.99mm f/1.8
 2,,IMG_4904.jpg,image/jpeg,1927635,1.93,2017:07:03 16:42:42,2017:07:03 16:42:42,Photos 3.0,72,72,Pixels/Inch,N,"[42, 5, 339/10]",W,"[88, 0, 982/25]",iPhone 6,1/618,"Flash did not fire, compulsory flash mode",iPhone 6 back camera 4.15mm f/2.2
 3,,IMG_5618.jpg,image/jpeg,2182228,2.18,2018:04:07 10:54:16,2018:04:07 10:54:16,Photos 3.0,72,72,Pixels/Inch,N,"[41, 35, 17]",W,"[93, 37, 193/100]",iPhone 6,1/30,"Flash did not fire, compulsory flash mode",iPhone 6 back camera 4.15mm f/2.2
