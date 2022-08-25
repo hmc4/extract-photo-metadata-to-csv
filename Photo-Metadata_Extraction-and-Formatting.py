@@ -53,7 +53,7 @@ for file in all_file_list:
     image_metadata = open(file_path, 'rb')
     tags = exifread.process_file(image_metadata, details=False)
     datetime_original = tags.get('EXIF DateTimeOriginal')
-    datetime_digitized = tags.get('EXIF DateTimeOriginal')
+    datetime_modified = tags.get('EXIF DateTime')
     image_software = tags.get('Image Software')
     image_width = tags.get('Image XResolution')
     image_height = tags.get('Image YResolution')
@@ -67,9 +67,8 @@ for file in all_file_list:
     flash = tags.get('EXIF Flash')
     lens = tags.get('EXIF LensModel')
     file_metadata = [file_ID, event, file_name, file_format[0], file_size, file_size_MB,
-                     datetime_original, datetime_digitized,
-                     image_software, image_width, image_height, image_units,
-                     latitude_ref, latitude, longitude_ref, longitude,
+                     datetime_original, datetime_modified,
+                     image_software, latitude_ref, latitude, longitude_ref, longitude,
                      camera, exposure, flash, lens]
     all_file_metadata.append(file_metadata)
 
@@ -79,9 +78,8 @@ for file in all_file_list:
 outfile = open('photo_data.csv', 'w')
 csv_out = csv.writer(outfile)
 csv_out.writerow(['ID', 'Event', 'File Name', 'File Format', 'File Size (Bytes)',
-                  'File Size (MB)', 'Date Taken', 'Date Digitized',
-                  'Software', 'Image Width', 'Image Height', 'Units',
-                  'Latitude', 'DMS', 'Longitude', 'DMS',
+                  'File Size (MB)', 'Date Taken', 'Date Modified',
+                  'Software', 'Latitude', 'DMS', 'Longitude', 'DMS',
                   'Camera', 'Exposure Time', 'Flash Used?', 'Lens Model'] )
 csv_out.writerows(all_file_metadata)
 outfile.close()
